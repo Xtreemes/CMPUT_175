@@ -48,6 +48,20 @@ def get_input(prompt) -> str:
     return input(prompt).title()
 
 
+def get_stop(prompt, name_to_code):
+    """
+    Gets a stop from the user
+    :param prompt:
+    :param name_to_code:
+    :return:
+    """
+    stop = ""
+    while not stop in name_to_code:
+        stop = get_input(prompt)
+
+    return name_to_code[stop]
+
+
 def get_direct_route(start, destination, routes) -> list or None:
     """
     Gets and returns a direct bus route or none if not found.
@@ -138,11 +152,8 @@ def main():
 
     code_to_name, name_to_code = setup_stops("codes.txt")
 
-    starting = get_input("Enter Starting Point: ")
-    destination = get_input("Enter Destination: ")
-
-    starting = name_to_code[starting]
-    destination = name_to_code[destination]
+    starting = get_stop("Enter Starting Point: ", name_to_code)
+    destination = get_stop("Enter Destination: ", name_to_code)
 
     direct_route = get_direct_route(starting, destination, routes)
 
