@@ -1,0 +1,64 @@
+D001,West Edmonton Mall
+D002,Summerlea
+D003,Meadowlark Park
+D004,Laurier Heights
+D005,Parkview
+D006,Crestwood
+D007,Wîhkwêntôwin
+D008,Corona
+D009,Bay Enterprise Square
+D010,Central
+D011,Boyle Street
+D012,Eastwood
+D013,Stadium
+D014,Collisium
+D015,Belvedere
+D016,Clareview
+D017,University
+D018,Garneau
+D019,Strathcona
+D020,King Edward Park
+D021,Capilano
+D022,Grandview Heights
+D023,Mckernan Belgravia
+D024,87Ave
+D025,Jasper Ave
+D026,Abbotsfield
+D027,Southgate
+D028,Pleasantview
+D029,Allendale
+D030,Queen Alexandra
+D031,Walterdale
+D032,Churchill
+D033,Westwood
+D034,Northgate
+D035,Eaux Claires
+D036,Britannia Youngstown
+D037,North Glenora
+D038,Woodcroft
+D039,Wellington
+D040,Kensington
+D041,Dickinsfield
+D042,Delwood
+D043,Patricia Heights
+D044,Brander Gardens
+D045,Lansdowne
+D046,Rideau Park
+D047,Calgary Trail
+D048,Meadows
+D049,Michaels Park
+D050,Woodvale
+D051,Millwoods Golf Course
+D052,Kiniski Gardens
+D053,Tamarack
+D054,Government Centre
+D055,Mccauley
+D056,Kingsway
+D057,Royal Gardens
+D058,Saddleback Road
+D059,Skyrattler
+D060,Ermineskin
+D061,Century Park
+D062,Aldergrove
+D063,Callingwood
+D064,Jamieson Place
