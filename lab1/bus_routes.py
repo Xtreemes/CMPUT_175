@@ -1,4 +1,7 @@
 """
+Prompts the user to enter two bus stops and provides them
+with a route to get to and fro if one is possible.
+
 Author: Luc Bibeau
 Date: January 19, 2026
 """
@@ -10,7 +13,6 @@ def read_file(filename: str) -> list:
     :param filename:
     :return:
     """
-
     result = []
 
     with open(filename, 'r') as file:
