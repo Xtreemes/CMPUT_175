@@ -10,8 +10,8 @@ Date: January 19, 2026
 def read_file(filename: str) -> list:
     """
     Opens a file and returns a list of each line split by comma (,)
-    :param filename:
-    :return:
+    :param filename: name of file to open
+    :return: list of each line
     """
     result = []
 
@@ -27,8 +27,8 @@ def read_file(filename: str) -> list:
 def setup_stops(filename: str) -> tuple[dict, dict]:
     """
     Set up the stop dictionaries (converting name to code and vice versa)
-    :param filename:
-    :return:
+    :param filename: name of file to open
+    :return: tuple of dictionaries to convert name/code
     """
     code_to_name = {}
     name_to_code = {}
@@ -44,18 +44,18 @@ def setup_stops(filename: str) -> tuple[dict, dict]:
 def get_input(prompt) -> str:
     """
     Gets and title cases an input from the user
-    :param prompt:
-    :return:
+    :param prompt: prompt for user
+    :return: input from user
     """
     return input(prompt).title()
 
 
-def get_stop(prompt, name_to_code):
+def get_stop(prompt, name_to_code) -> str:
     """
     Gets a stop from the user
-    :param prompt:
-    :param name_to_code:
-    :return:
+    :param prompt: prompt for user
+    :param name_to_code: dict
+    :return: stop code
     """
     stop = ""
     while not stop in name_to_code:
@@ -67,10 +67,10 @@ def get_stop(prompt, name_to_code):
 def get_direct_route(start, destination, routes) -> list or None:
     """
     Gets and returns a direct bus route or none if not found.
-    :param start:
-    :param destination:
-    :param routes:
-    :return:
+    :param start: start code
+    :param destination: stop code
+    :param routes: list of routes
+    :return: route to take (list)
     """
 
     for route in routes:
@@ -81,10 +81,10 @@ def get_direct_route(start, destination, routes) -> list or None:
 def get_transfer_route(start, destination, routes) -> tuple[list, list, str] or None:
     """
     Gets and returns a transfer bus route or none if not found.
-    :param start:
-    :param destination:
-    :param routes:
-    :return:
+    :param start: start code
+    :param destination: stop code
+    :param routes: list of routes
+    :return: transfer info tuple
     """
 
     start_routes = []
@@ -112,9 +112,9 @@ def get_transfer_route(start, destination, routes) -> tuple[list, list, str] or 
 def display_direct_route(route, stops) -> None:
     """
     Displays a direct bus route.
-    :param route:
-    :param stops:
-    :return:
+    :param route: direct route list
+    :param stops: code to name dict
+    :return: none
     """
     names = [route[0]]
 
@@ -125,6 +125,12 @@ def display_direct_route(route, stops) -> None:
 
 
 def display_transfer_route(transfer_info, stops) -> None:
+    """
+    Displays a transfer bus route.
+    :param transfer_info: tuple
+    :param stops: code to name dict
+    :return: none
+    """
     start_route = transfer_info[0]
     destination_route = transfer_info[1]
     stop = stops[transfer_info[2]]
@@ -133,7 +139,8 @@ def display_transfer_route(transfer_info, stops) -> None:
     destination_route_id = destination_route.pop(0)
 
     print("\nTransfer option found:\n")
-    print(f"Take route {start_route_id} and get off at {stop}.\nThen take route {destination_route_id} to your destination.\n")
+    print(
+        f"Take route {start_route_id} and get off at {stop}.\nThen take route {destination_route_id} to your destination.\n")
 
     start_names = []
     destination_names = []
@@ -149,9 +156,9 @@ def display_transfer_route(transfer_info, stops) -> None:
 
 
 def main():
-
     routes = read_file("routes.txt")
 
+    # setup dicts
     code_to_name, name_to_code = setup_stops("codes.txt")
 
     starting = get_stop("Enter Starting Point: ", name_to_code)
@@ -162,12 +169,10 @@ def main():
     if direct_route:
         display_direct_route(direct_route, code_to_name)
     else:
-
         transfer_info = get_transfer_route(starting, destination, routes)
 
         if transfer_info:
             display_transfer_route(transfer_info, code_to_name)
-
         else:
             print("No routes serving that start point and end point")
 
