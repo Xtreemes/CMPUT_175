@@ -1,6 +1,6 @@
 """
 Prompts the user to enter two bus stops and provides them
-with a route to get to and fro if one is possible.
+with a route to get to and fro if possible.
 
 Author: Luc Bibeau
 Date: January 19, 2026
