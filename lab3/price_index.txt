@@ -1,0 +1,9 @@
+Location,Avg Price Per sqft
+Strathcona,380
+Southgate,368.55
+Clareview,368
+Century Park,340
+Mill Woods,332.42
+Bonnie Doon,342.88
+Downtown,408.44
+McKernan,410

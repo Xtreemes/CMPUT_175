@@ -1,0 +1,251 @@
+Location,Rooms,Area,Owner ID
+Century Park,6,2487.13,4
+Mill Woods,5,1539.32,1
+Mill Woods,3,1030.29,3
+Strathcona,3,1248.48,5
+Clareview,6,1593.65,5
+Downtown,3,1103.95,4
+Downtown,4,1465.69,0
+Downtown,2,1011.61,0
+McKernan,1,411.07,4
+McKernan,3,1275.99,6
+Clareview,6,1668.79,4
+Bonnie Doon,4,1680.63,5
+Mill Woods,4,1615.9,6
+Downtown,3,1341.28,6
+Clareview,2,789.33,0
+Southgate,2,879.53,3
+Century Park,2,822.74,6
+Century Park,6,1560.6,4
+Bonnie Doon,3,1048.62,2
+Bonnie Doon,1,492.93,4
+Downtown,3,1310.88,0
+Bonnie Doon,6,1531.79,2
+Bonnie Doon,5,2020.76,2
+Clareview,4,1761.19,6
+Century Park,4,1302.8,2
+McKernan,4,1757.83,1
+Southgate,4,1842.35,6
+Bonnie Doon,1,567.52,6
+Mill Woods,2,971.02,6
+Bonnie Doon,4,1446.47,2
+Clareview,2,756.94,5
+Bonnie Doon,4,1639.49,2
+Strathcona,4,1527.54,3
+Mill Woods,6,2474.45,2
+Mill Woods,5,1715.77,2
+Downtown,2,1096.15,6
+McKernan,2,806.52,2
+Downtown,2,715.88,4
+Clareview,6,2686.45,5
+Mill Woods,6,1841.33,2
+Southgate,6,2123.3,3
+Mill Woods,4,1575.98,2
+Mill Woods,3,1247.81,0
+Mill Woods,6,1803.39,2
+Bonnie Doon,5,2196.11,1
+Century Park,3,1151.55,4
+McKernan,1,495.36,5
+Downtown,3,1005.93,5
+Century Park,5,2292.16,2
+Strathcona,2,855.32,6
+Southgate,2,823.03,6
+Clareview,3,1055.11,3
+Mill Woods,6,1841.14,5
+McKernan,5,2125.76,3
+Bonnie Doon,6,1607.83,1
+Strathcona,3,1381.61,1
+Mill Woods,5,2146.63,1
+McKernan,3,1063.19,4
+Mill Woods,5,1320.34,2
+Mill Woods,6,1994.85,2
+Century Park,6,1890.04,2
+Southgate,5,2191.68,6
+Strathcona,6,2115.15,3
+Strathcona,5,2294.54,6
+Century Park,4,1381.73,4
+Strathcona,4,1188.45,0
+McKernan,4,1478.66,1
+Clareview,3,1125.52,1
+Clareview,2,756.28,0
+Bonnie Doon,2,994.14,0
+Downtown,5,1665.8,2
+Century Park,4,1443.06,6
+Mill Woods,2,829.14,4
+Century Park,2,794.72,5
+Clareview,1,512.29,2
+McKernan,2,797.36,4
+Southgate,1,534.16,4
+Downtown,3,939.54,3
+Mill Woods,4,1443.54,4
+Downtown,6,2585.94,4
+Clareview,2,879.45,5
+Century Park,1,585.41,4
+Downtown,5,2050.14,3
+Bonnie Doon,6,2022.31,1
+Clareview,4,1235.19,0
+Downtown,5,2045.33,5
+Clareview,1,461.06,3
+Downtown,5,1514.33,5
+Clareview,4,1785.36,1
+Century Park,2,715.81,1
+Downtown,2,889.64,2
+Downtown,1,518.58,0
+Clareview,4,1441.82,0
+Century Park,2,768.64,5
+Bonnie Doon,4,1699.71,3
+McKernan,2,799.29,5
+Strathcona,4,1203.57,1
+Century Park,3,948.39,6
+Downtown,2,889.41,4
+Strathcona,3,1108.72,6
+Mill Woods,5,1682.17,0
+Strathcona,5,2083.47,2
+Century Park,3,932.66,5
+McKernan,5,1968.12,5
+Strathcona,6,1744.66,6
+McKernan,4,1649.04,1
+Bonnie Doon,5,1871.2,3
+Bonnie Doon,4,1195.17,0
+Century Park,3,1208.07,1
+Century Park,2,949.71,1
+Clareview,3,1350.26,3
+McKernan,3,1068.73,1
+Century Park,6,2186.72,5
+Bonnie Doon,4,1463.74,0
+Downtown,2,937.05,3
+McKernan,4,1580.38,6
+Century Park,1,523.02,1
+Bonnie Doon,2,1094.03,5
+Century Park,4,1804.53,3
+Strathcona,5,1486.43,6
+McKernan,4,1339.65,0
+Southgate,6,2170.46,6
+Bonnie Doon,4,1128.78,5
+McKernan,3,1099.59,0
+Clareview,5,1992.9,6
+McKernan,1,515.58,3
+McKernan,2,833.11,2
+Bonnie Doon,2,998.03,4
+Bonnie Doon,2,902.28,6
+Bonnie Doon,5,1348.0,0
+Century Park,6,2112.88,0
+Bonnie Doon,6,2071.11,3
+Century Park,5,1955.6,5
+Mill Woods,4,1372.08,4
+Strathcona,5,1421.56,4
+Clareview,2,783.05,4
+McKernan,5,1869.16,4
+Century Park,1,462.33,3
+McKernan,4,1586.33,6
+McKernan,6,1502.12,6
+Strathcona,4,1262.65,0
+Southgate,3,1230.17,0
+Southgate,5,2088.75,6
+Mill Woods,3,1182.71,2
+Clareview,3,1280.58,2
+Strathcona,2,1066.21,5
+Strathcona,3,1456.83,2
+Bonnie Doon,6,1631.6,6
+McKernan,3,1286.14,5
+Bonnie Doon,6,2031.42,5
+Clareview,2,942.31,4
+McKernan,4,1842.23,2
+Bonnie Doon,3,968.88,3
+Mill Woods,2,927.3,0
+Clareview,6,2504.99,3
+Downtown,6,1916.04,3
+Clareview,1,452.85,6
+Mill Woods,4,1510.23,5
+Mill Woods,2,706.74,2
+Mill Woods,5,1885.96,0
+Bonnie Doon,6,2294.26,0
+Bonnie Doon,2,1079.21,5
+Clareview,4,1662.05,2
+McKernan,5,1715.5,6
+Clareview,2,775.75,0
+Strathcona,6,2689.39,2
+Downtown,6,1607.45,1
+Bonnie Doon,2,1016.31,3
+Mill Woods,6,1720.05,3
+McKernan,3,1417.38,2
+McKernan,5,1506.63,0
+Clareview,1,519.78,0
+Clareview,2,1013.77,4
+McKernan,2,839.22,5
+Strathcona,5,1870.65,3
+Mill Woods,4,1378.49,1
+Strathcona,6,1974.59,1
+Bonnie Doon,6,1769.93,1
+Clareview,6,1756.18,5
+Strathcona,1,453.08,5
+Strathcona,4,1696.79,3
+Century Park,6,1905.06,1
+Southgate,6,2395.88,4
+Century Park,3,1215.1,4
+Century Park,4,1839.01,4
+Southgate,6,2044.49,6
+Southgate,3,1112.5,0
+Century Park,4,1744.69,0
+Downtown,6,2394.52,0
+Clareview,5,1410.07,6
+Strathcona,5,2266.21,6
+Southgate,2,763.17,6
+McKernan,6,1883.01,4
+Strathcona,4,1850.13,6
+Clareview,2,898.45,3
+Clareview,4,1358.84,3
+Strathcona,6,2132.71,4
+Mill Woods,5,1773.71,2
+McKernan,6,2241.12,2
+Strathcona,1,576.81,1
+Mill Woods,3,1449.32,3
+Mill Woods,3,1159.91,6
+Mill Woods,2,974.3,1
+Bonnie Doon,1,590.04,0
+Clareview,3,1171.12,2
+Strathcona,2,1069.44,4
+Downtown,6,1841.43,4
+Downtown,2,701.03,2
+Downtown,5,2293.59,1
+Bonnie Doon,4,1683.03,1
+Bonnie Doon,2,902.88,4
+Strathcona,1,429.68,4
+Downtown,5,2070.75,4
+Bonnie Doon,6,2639.48,6
+Mill Woods,2,806.53,2
+Strathcona,4,1793.71,1
+Century Park,6,2622.79,3
+Downtown,2,858.86,5
+Mill Woods,6,2077.35,5
+Century Park,6,1958.0,3
+Clareview,2,1068.36,6
+Strathcona,4,1838.68,2
+Downtown,6,2140.81,1
+Strathcona,1,468.24,3
+Century Park,4,1171.68,6
+Bonnie Doon,3,1057.77,3
+Strathcona,1,488.33,2
+Bonnie Doon,6,2592.17,1
+Mill Woods,4,1140.34,3
+Downtown,4,1571.71,5
+Southgate,6,2209.51,1
+Mill Woods,5,1730.61,6
+Bonnie Doon,6,1662.73,1
+Century Park,2,740.61,4
+Century Park,4,1695.84,1
+Downtown,2,968.32,3
+Downtown,5,1355.3,0
+Strathcona,2,939.67,6
+Strathcona,3,1185.78,2
+Mill Woods,3,1498.48,1
+Clareview,3,1144.22,5
+Downtown,5,1713.26,3
+Southgate,4,1825.54,1
+McKernan,5,2267.38,0
+Bonnie Doon,4,1825.59,1
+Strathcona,6,2030.35,2
+Century Park,6,2422.24,3
+Mill Woods,1,409.01,2
+Southgate,6,2050.37,1
+Bonnie Doon,3,1242.91,4
