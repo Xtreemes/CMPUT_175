@@ -1,5 +1,6 @@
 """
-Option 1
+Displays information about each location such as average
+area, average price, and available units (Option 1).
 
 Author: Luc Bibeau
 When: February 4, 2026
@@ -12,8 +13,8 @@ def read_file(filename):
     """
     Opens a file and returns a 2D array of strings.
     Splits by line and comma (,)
-    :param filename:
-    :return:
+    :param filename: str
+    :return: list[list[str]]
     """
 
     with open(filename, 'r') as file:
@@ -30,8 +31,8 @@ def load_properties(filename):
     """
     Loads properties as a dictionary. Key is location.
     Entry is list of properties belonging to said location.
-    :param filename:
-    :return:
+    :param filename: str
+    :return: dict[str, list]
     """
     result = {}
 
@@ -53,8 +54,8 @@ def load_properties(filename):
 def load_price_index(filename):
     """
     Loads the price index of locations
-    :param filename:
-    :return:
+    :param filename: str
+    :return: dict[str, int]
     """
     result = {}
 
@@ -69,9 +70,9 @@ def load_price_index(filename):
 def aggregate_data(properties, price_index):
     """
     Gets the relevant information (available properties, avg price, avg sq ft.) of each location.
-    :param properties:
-    :param price_index:
-    :return:
+    :param properties: list of properties
+    :param price_index: dict
+    :return: dict
     """
     result = {}
 
@@ -90,14 +91,19 @@ def aggregate_data(properties, price_index):
 
         result[location] = (round(avg_area, 2), round(avg_price, 2), available_properties)
 
-    sorted_result = sorted(result.items(), key=lambda x: x[1][2], reverse=True)
+    sorted_result = sorted(result.items(), key=lambda x: x[1][2], reverse=True)  # sort by number of available properties
 
     return dict(sorted_result)
 
 
 def display_data(data):
+    """
+    Display the final set of data in a neat table.
+    :param data: dict of data
+    :return: None
+    """
 
-    separator = f"+{'-' * 15}" * 3 + "+" + ("-" * 11) + "+"
+    separator = f"+{'-' * 15}" * 3 + "+" + ("-" * 11) + "+"  # setup string used to separate headers & data
 
     print(separator)
     print(f"| {'Location':<14}| {'Average Area':<14}| {'Average Price':<14}| {'Available':<10}|")
@@ -106,10 +112,10 @@ def display_data(data):
     for location in data:
         avg_area, avg_price, available = data[location]
 
-        location_string = f" {location:<14}"
-        area_string = f"{(f'{avg_area:,.2f}' + ' sqft'):^15}"
-        price_string = f" $ {avg_price:>11,.2f} "
-        available_string = f"{available:>10} "
+        location_string = f" {location:<14}"  # left align by 14
+        area_string = f"{(f'{avg_area:,.2f}' + ' sqft'):^15}"  # format number first then align entire string
+        price_string = f" $ {avg_price:>11,.2f} "  # right align by 14 and format number
+        available_string = f"{available:>10} "  # right align by 10
 
         print(f"|{location_string}|{area_string}|{price_string}|{available_string}|")
     print(separator)
