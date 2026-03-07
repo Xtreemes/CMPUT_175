@@ -33,8 +33,18 @@ def extract_artists(song_info):
     This function makes sure that all artists involved in a song show up in the final 
     representation.
     """
-    # TODO: Implement this function
-    pass
+
+    if not "artists" in song_info:
+        return "NA"
+
+    artist_names = []
+
+    artists = song_info['artists']
+    for artist in artists:
+        artist_names.append(artist['name'])
+
+    return ", ".join(artist_names)
+
 
 def song_search(query):
     """
@@ -44,8 +54,15 @@ def song_search(query):
     This function invokes the search method on YTMusic object with required arguments
     and returns the top "NO_OF_RESULTS" results.
     """
+
     query_result = YT_MUSIC.search(query, filter="songs")
-    print(query_result)
+
+    top_results = []
+
+    for index in range(min(NO_OF_RESULTS, len(query_result))):
+        top_results.append(query_result[index])
+
+    return top_results
 
 
 def filter_info(results):
@@ -57,8 +74,21 @@ def filter_info(results):
     create Song objects and append them to a list. If an error occurs, raise an
     exception.
     """
-    # TODO: Implement this function
-    pass
+
+    songs = []
+
+    for entry in results:
+        assert 'title' in entry, "Title field is missing"
+        assert 'duration_seconds' in entry, "Duration field is missing"
+
+        title = entry['title']
+        duration = entry['duration_seconds']
+        artists = extract_artists(entry)
+
+        songs.append(Song(title, artists, duration))
+
+    return songs
+
 
 def print_song_results(results):
     """
@@ -86,8 +116,41 @@ def search():
     6. Returns the chosen song information
     7. If the user wants to go back, it returns None
     """
-    # TODO: Implement this function
-    pass
+
+    repeat = True
+
+    while repeat:  # use while loop to allow researching
+        clear()
+        results = song_search(input("Search: "))
+        filtered_results = filter_info(results)
+        print_song_results(filtered_results)
+
+        num_of_results = len(filtered_results)
+
+        print(f"""
+Choose one of the following options:
+        Enter a number (1-{num_of_results}) to add a song to playlist
+        Enter '0" to search again
+        Enter 'q' to go back""")
+
+        choosing = True
+
+        while choosing:
+            choice = input(">> ")
+
+            if choice == 'q':
+                return None  # return early if quit
+
+            try:
+                num = int(choice)
+
+                if num == 0:
+                    choosing = False  # stop choosing and research if 0
+                elif 0 < num <= num_of_results:
+                    return filtered_results[num - 1]
+
+            except ValueError:
+                pass
 
 def main():
     """
