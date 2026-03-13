@@ -181,7 +181,10 @@ class DLinkedList:
         if self.__current is None:  # current is null, queue is empty
             self.__tail, self.__head, self.__current = node, node, node
 
-    
+        if next is None:
+            self.__tail = node
+
+
     def add_last(self, item: Song):
         """
         Input: A Song object
@@ -276,8 +279,11 @@ class DLinkedList:
 
         next.set_previous(previous)  # next will not be null as current != tail
 
-        if not is_head:  # must check if head
+        if is_head:  # must check if head
+            self.__head = next
+        else:
             previous.set_next(next)
+
 
         self.__current = next
 
